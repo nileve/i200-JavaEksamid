@@ -1,7 +1,3 @@
-package Maatriks;
-
-import java.util.Arrays;
-
 /**
  * Loo 9*9 suurune maatriks, millele tekib loode suunaline nurkade muster, nagu näites.
  * Tundub raske? Sul tuleb lihtsalt veeru ja rea indeksi seos leida.
@@ -20,13 +16,36 @@ import java.util.Arrays;
  * Tundub raske? Leia seoseid rea ja veeru indeksi numbritega.
  */
 public class LoodeNurk {
-
-    // Lihtsalt abiline meetod, et maatriksit välja printida
-    private static void printMaatriks(int[][] laud) {
-        for (int i = 0; i < laud.length; i++) {
-            System.out.println(Arrays.toString(laud[i]));
+    
+    //    // Lihtsalt abiline meetod, et maatriksit välja printida
+    //    private static void printMaatriks(int[][] laud) {
+    //        for (int i = 0; i < laud.length; i++) {
+    //            System.out.println(Arrays.toString(laud[i]));
+    //        }
+    //        System.out.println("");
+    //    }
+    
+    public static void main (String[] args) {
+        
+        int row;
+        int column;
+        
+        for (row = 1; row <= 9; row++) {
+            
+            for (column = 1; column <= 9; column++) {
+                if (row == column || column > row) {
+                    System.out.print(row + " ");
+                } else if (row > column) {
+                    System.out.print(column + " ");
+                } else {
+                    System.out.print("x");
+                }
+            }
+            
+            System.out.println();
+            
         }
-        System.out.println("");
+        
     }
-
+    
 }

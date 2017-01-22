@@ -1,5 +1,3 @@
-package Maatriks;
-
 import java.util.Arrays;
 
 /**
