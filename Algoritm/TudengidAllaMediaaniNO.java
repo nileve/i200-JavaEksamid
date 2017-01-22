@@ -6,7 +6,7 @@ import java.util.Arrays;
  * tegelikult 60 punkti, pead esiteks kõik suuremad arvud 60 peale ümardama.
  * Teiseks leia mitu tudengit said alla mediaani?
  */
-public class TudengidAllaMediaani {
+public class TudengidAllaMediaaniNO {
 
     // Main klass on ainult sulle endale testimiseks
     public static void main(String[] args) {

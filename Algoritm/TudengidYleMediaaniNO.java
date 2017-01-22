@@ -1,12 +1,10 @@
-import java.util.Arrays;
-
 /**
  * if, while, int[]
  * Sulle antakse ette mitu gruppi tudengite hindeid. Kuna maksimum hinne on
  * tegelikult 60 punkti, pead esiteks kõik suuremad arvud 60 peale ümardama.
  * Teiseks leia mitu tudengit said üle mediaani?
  */
-public class TudengidYleMediaani {
+public class TudengidYleMediaaniNO {
 
     // Main klass on ainult sulle endale testimiseks
     public static void main(String[] args) {
@@ -23,3 +21,12 @@ public class TudengidYleMediaani {
         return 0;
     }
 }
+
+//Arrays.sort(numArray);
+//        double median;
+//        if (numArray.length % 2 == 0)
+//        median = ((double)numArray[numArray.length/2] + (double)numArray[numArray.length/2 - 1])/2;
+//        else
+//        median = (double) numArray[numArray.length/2];
+
+

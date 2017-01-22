@@ -8,23 +8,32 @@ public class Suusailm {
     
     public static void main (String[] args) {
         
-        int[] kraadid1 = {11, 10, 5, 1, 3, -2, -6, 2, -13, -24, -9, 0};
+        int[] kraadid1 = {11, 10, 5, 1, -3, -2, -6, 2, -13, -24, -9, 0};
         int[] kraadid2 = {-23, -25, -22, -18, -15, -19, -13};
         
-        int negCount = (int) Arrays.stream(kraadid1).filter(number -> number < 0).count();
-        int posCount = (int) Arrays.stream(kraadid1).filter(number -> number >= 0).count();
-        int posMore = posCount - negCount;
-        System.out.println("kraadid1: pos " + posMore + " more then neg ");
+        int newKraadid1 = countPosAndNeg(kraadid1);
+        int newKraadid2 = countPosAndNeg(kraadid2);
+        System.out.println("kraadid1 count (pos > neg): " + newKraadid1);
+        System.out.println("kraadid2 count (pos > neg): " + newKraadid2);
         
-        int negCount2 = (int) Arrays.stream(kraadid2).filter(number -> number < 0).count();
-        int posCount2 = (int) Arrays.stream(kraadid2).filter(number -> number >= 0).count();
-        int posMore2 = posCount2 - negCount2;
-        if (posCount2 < negCount2) {
-            System.out.println("kraadid2: pos is less then neg. " + posMore2);
+    }
+    
+    public static int countPosAndNeg (int[] newArray) {
+        // filter out neg numbers
+        int neg = (int) Arrays.stream(newArray).filter(number -> number < 0).count();
+        // filter out pos numbers
+        int pos = (int) Arrays.stream(newArray).filter(number -> number >= 0).count();
+        int posMoreThen = pos - neg;
+        if (pos < neg) {
+            System.out.println("pos count is less then neg (neg count is more then pos by): " + Math
+                    .abs(posMoreThen));
+        } else if (pos == neg) {
+            System.out.println(
+                    "pos and neg count is equal: pos count is " + pos + " and neg count is " + neg);
         } else {
-            System.out.println("kraadid2: pos " + posMore2 + " more then neg ");
+            System.out.println(posMoreThen + " pos values more then neg values");
         }
-        
+        return posMoreThen;
     }
     
 }

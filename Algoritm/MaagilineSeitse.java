@@ -15,9 +15,10 @@ public class MaagilineSeitse {
     }
     
     public static void printArray (int[] printedArray) {
-        for (int i = 0; i < printedArray.length; i++) {
-            System.out.println("New array element " + i + " value: " + printedArray[i]);
-        }
+        //        for (int i = 0; i < printedArray.length; i++) {
+        //            System.out.println("Element " + i + " new value: " + printedArray[i]);
+        //        }
+        System.out.println("New elements: " + Arrays.toString(printedArray));
     }
     
     // create new array, multiply 7 by 2, return to main method
@@ -37,6 +38,7 @@ public class MaagilineSeitse {
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
+        //return Math.round((double) sum / (double) array.length);
         return (double) sum / (double) array.length;
     }
     
