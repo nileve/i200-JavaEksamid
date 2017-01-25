@@ -6,7 +6,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import java.util.Scanner;
 
 /**
  * Loo LabelNO, mille sisu saab kasutaja TextFieldi kaudu muuta.
@@ -28,8 +27,6 @@ public class LabelNO extends Application {
         
         BorderPane border = new BorderPane();
         
-        Scanner userInput = new Scanner(System.in);
-        
         Label input = new Label("Sisesta oma üllas mõte siia (ja vajuta 'Enter'): ");
         TextField inputField = new TextField("mõtle enne kui kirjutama hakkad ... ");
         inputField.setPrefWidth(300);
@@ -45,7 +42,7 @@ public class LabelNO extends Application {
         
         inputField.setOnAction(event -> {
             String text = inputField.getText();
-            outputArea.appendText("\n" + text + "\n");
+            outputArea.appendText("\n" + text);
             inputField.selectAll();
         });
         
@@ -65,4 +62,5 @@ public class LabelNO extends Application {
         primaryStage.show();
         
     }
+    
 }

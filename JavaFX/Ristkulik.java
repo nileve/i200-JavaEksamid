@@ -42,14 +42,14 @@ public class Ristkulik extends Application {
         widthX.setShowTickLabels(true);
         widthX.setShowTickMarks(true);
         widthX.setMajorTickUnit(15);
-        widthX.setMinorTickCount(1);
+        widthX.setMinorTickCount(2);
         widthX.setBlockIncrement(10);
         
         Slider heightY = new Slider(5, 200, 20);
         heightY.setShowTickLabels(true);
         heightY.setShowTickMarks(true);
         heightY.setMajorTickUnit(15);
-        heightY.setMinorTickCount(1);
+        heightY.setMinorTickCount(2);
         heightY.setBlockIncrement(10);
         
         Label widthXCaption = new Label("width:");
@@ -60,7 +60,6 @@ public class Ristkulik extends Application {
         
         widthX.valueProperty().addListener((ov, old_val, new_val) -> {
             rectangle.setWidth(new_val.doubleValue());
-            //line.setScaleY(new_val.doubleValue());
             widthXValue.setText(String.format("%.2f", new_val));
         });
         
