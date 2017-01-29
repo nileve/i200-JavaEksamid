@@ -26,5 +26,36 @@ public class Gitter {
 
         chat.prindiKoikSonumidKoosKasutajanimega();
         chat.prindiToaNimi();
+        
     }
+    
+}
+
+class Chat {
+    
+    private String toaNimi;
+    
+    public Chat (String toaNimi) {
+        this.toaNimi = toaNimi;
+    }
+    
+    public void sisestaSonum (String nimi, String sonum) {
+        System.out.println(nimi + ": " + sonum);
+    }
+    
+    
+    public void prindiKoikSonumidKoosKasutajanimega () {
+        //System.out.println(nimi + ": " + sonum);
+    }
+    
+    
+    public void adminKustutabSonumi (String sonum) {
+        System.out.println("Kustutati järgmine sõnum: " + sonum);
+    }
+    
+    
+    public void prindiToaNimi () {
+        System.out.println("Toanimi: " + toaNimi);
+    }
+    
 }

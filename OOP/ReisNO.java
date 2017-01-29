@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Siin failis kasutatakse objekti Seljakott, aga Seljakott klassi ei eksisteeri. Sinu ülesanne
  * on see luua. Pane tähele, et mitte ükski objekti muutuja ei tohi olla
@@ -7,7 +5,7 @@ import java.util.ArrayList;
  *
  * Käesolevat klassi ei tohi muuta! Arvad, et ei jää vahele? :)
  */
-public class Reis {
+public class ReisNO {
 
     public static void main(String[] args) {
 
@@ -28,5 +26,32 @@ public class Reis {
 
         System.out.println("Kotis on järgmised asjad: " + kott.misOnKotis());
         System.out.println("Asju on kotis nii mitu: " + kott.mituAsjaOnKotis());
+    }
+}
+
+class Seljakott {
+    
+    public Seljakott (String omanikuNimi) {
+    }
+    
+    public void lisaAsi (String hambapasta) {
+    }
+    
+    public void eemaldaAsi (String langevari) {
+    }
+    
+    public String misOnKotis () {
+        return null;
+    }
+    
+    public String mituAsjaOnKotis () {
+        return null;
+    }
+    
+    public String omanikuNimi () {
+        return null;
+    }
+    
+    public void rebene () {
     }
 }

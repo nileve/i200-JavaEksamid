@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Siin failis kasutatakse objekti Laev, aga Laev klassi ei eksisteeri. Sinu ülesanne
  * on see luua. Pane tähele, et mitte ükski objekti muutuja ei tohi olla
@@ -7,7 +5,7 @@ import java.util.ArrayList;
  *
  * Käesolevat klassi ei tohi muuta! Arvad, et ei jää vahele? :)
  */
-public class Laevastik {
+public class LaevastikNO {
 
     public static void main(String[] args) {
 
@@ -29,4 +27,40 @@ public class Laevastik {
         System.out.println("Pardal on nii mitu inimest: " + raidur.reisijateArv());
         System.out.println("Laeva nimi on " + raidur.misNimi());
     }
+}
+
+class Laev {
+    
+    private String laevaNimi;
+    private String s;
+    private String s2;
+    
+    public Laev (String laevaNimi) {
+        this.laevaNimi = laevaNimi;
+    }
+    
+    public void lisaReisija (String s) {
+        this.s = s;
+    }
+    
+    public void eemaldaReisija (String s) {
+        s2 = s;
+    }
+    
+    public String votaReisijad () {
+        return null;
+    }
+    
+    
+    public String reisijateArv () {
+        return null;
+    }
+    
+    public String misNimi () {
+        return null;
+    }
+    
+    public void kalaHammustasKummipaatiAugu () {
+    }
+    
 }

@@ -24,3 +24,24 @@ public class Legend {
 
     }
 }
+
+class Zelda {
+    
+    private int elusid;
+    private int kollilElusid;
+    
+    public Zelda (int elusid) {
+        this.elusid = elusid;
+    }
+    
+    public void kaklusKolliga (int kollilElusid) {
+        this.kollilElusid = kollilElusid;
+    }
+    
+    public void prindiMituEluAlles () {
+    }
+    
+    public void prindiKasOnElus () {
+    }
+    
+}

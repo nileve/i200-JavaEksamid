@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Siin failis kasutatakse objekti Kassa, aga Kassa klassi ei eksisteeri. Sinu ülesanne
  * on see luua. Pane tähele, et mitte ükski objekti muutuja ei tohi olla
@@ -32,4 +30,32 @@ public class Pood {
         System.out.println("Klient ostis järgmised tooted: " + kassa.votaTooted());
         System.out.println("Tooteid on kokku: " + kassa.votaToodeteArv());
     }
+}
+
+class Kassa {
+    
+    public Kassa (String kassapidaja) {
+    }
+    
+    public void lisaToode (String toode) {
+    }
+    
+    public void eemaldaToode (String toode) {
+    }
+    
+    public String votaTooted () {
+        return null;
+    }
+    
+    public String votaToodeteArv () {
+        return null;
+    }
+    
+    public String votaKassapidajaNimi () {
+        return null;
+    }
+    
+    public void kliendilPoleRaha () {
+    }
+    
 }

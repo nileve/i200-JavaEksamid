@@ -20,3 +20,27 @@ public class Kirjanik {
 
     }
 }
+
+class Pastakas {
+    
+    private int tindiKogus;
+    
+    public Pastakas (int tindiKogus) {
+        this.tindiKogus = tindiKogus;
+    }
+    
+    
+    public void kirjuta (String s) {
+        if (s.length() > tindiKogus) {
+            System.out.println("tint otsas");
+        } else {
+            System.out.println(s);
+            tindiKogus = tindiKogus - s.length();
+        }
+    }
+    
+    public void prindiPaljuTintiAlles () {
+        System.out.println("Tinti on: " + tindiKogus);
+    }
+    
+}

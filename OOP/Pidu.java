@@ -38,3 +38,22 @@ public class Pidu {
         korter.prindiKylalisteArv(); // peaks olema 9, järjekorda ei ole.
     }
 }
+
+class Korter {
+    
+    public Korter (int mahutab) {
+    }
+    
+    public void saabus (String isik) {
+    }
+    
+    public void prindiKylalisteArv () {
+    }
+    
+    public void prindiPaljuVeelMahub () {
+    }
+    
+    public void lahkus (String isik) {
+    }
+    
+}

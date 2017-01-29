@@ -29,3 +29,22 @@ public class Raamatukogu {
 
     }
 }
+
+class Sonaraamat {
+    
+    public Sonaraamat (String raamatuKeel) {
+    }
+    
+    public void sisestaSona (String puaas) {
+    }
+    
+    public String[] otsiEsimeseTaheJargi (String u) {
+        return null;
+    }
+    
+    public void eemaldaSona (String s) {
+    }
+    
+    public void misKeelesRaamatOn () {
+    }
+}

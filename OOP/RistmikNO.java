@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 /**
  * Siin failis kasutatakse objekti Foor, aga Foor klassi ei eksisteeri. Sinu ülesanne
  * on see luua. Pane tähele, et mitte ükski objekti muutuja ei tohi olla
@@ -7,7 +5,7 @@ import java.util.ArrayList;
  *
  * Käesolevat klassi ei tohi muuta! Arvad, et ei jää vahele? :)
  */
-public class Ristmik {
+public class RistmikNO {
 
     public static void main(String[] args) {
 
@@ -27,5 +25,28 @@ public class Ristmik {
 
         System.out.println("Fooris põlevad tuled: " + foor.misTuledPolevad());
         System.out.println("Foori nimetus on: " + foor.votaNimetus());
+    }
+}
+
+class Foor {
+    
+    public Foor (String fooriNimetus) {
+    }
+    
+    public void syytaTuli (String punane) {
+    }
+    
+    public void kustutaTuli (String punane) {
+    }
+    
+    public String misTuledPolevad () {
+        return null;
+    }
+    
+    public String votaNimetus () {
+        return null;
+    }
+    
+    public void hakkeridSaidKontrolli () {
     }
 }
